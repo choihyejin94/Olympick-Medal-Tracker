@@ -30,7 +30,7 @@ body {
   gap: 10px;
   margin-top: 40px;
   border: 1px solid white;
-  border-radius: 5px;
+  border-radius: 8px;
   text-align: center;
 }
 
@@ -48,7 +48,7 @@ header {
   align-items: center;
   padding: 15px 70px;
   border-radius: 8px;
-  gap: 30px;
+  gap: 25px;
   text-align: center;
   font-size: large;
 }
@@ -78,7 +78,6 @@ label {
   font-family: inherit;
   background-color: #ffd500;
   cursor: pointer;
-  transition: border-color 0.25s;
 }
 
 button:hover {
