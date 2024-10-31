@@ -5,7 +5,7 @@ const MedalList = ({ countries, setCountries }) => {
     // 내림차순 정렬, [...]에 넣으면 원본 배열 변경되지 않음.
 
     const deleteBtn = (countryToDelete) => {
-        setCountries(countries.filter((country) => country.country != countryToDelete));
+        setCountries(countries.filter((country) => country.country !== countryToDelete));
     } // countryToDelete는 삭제할 국가의 이름
 
     return (
@@ -24,13 +24,15 @@ const MedalList = ({ countries, setCountries }) => {
                         </thead>
                         <tbody className='secondBtn'>
                             {sortedcountries.map((content, index) => (
-                                <tr key={index} className={index % 2 === 0 ? 'even' : 'odd'}>
+                                <tr key={content.country} className={index % 2 === 0 ? 'even' : 'odd'}>
                                     <td>{content.country}</td>
                                     <td>{content.gold}</td>
                                     <td>{content.silver}</td>
                                     <td>{content.bronze}</td>
-                                    <button className='deleteBtn' onClick={() => deleteBtn(content.country)}>삭제</button>
-                                    {/* onClick에 직접 deleteBtn(content.country)를 넣으면 즉시 호출되기때문에 함수안에 넣는다. */}
+                                    <td>
+                                        <button className='deleteBtn' onClick={() => deleteBtn(content.country)}>삭제</button>
+                                        {/* onClick에 직접 deleteBtn(content.country)를 넣으면 즉시 호출되기때문에 함수안에 넣는다. */}
+                                    </td>
                                 </tr>
                             ))}
                         </tbody>
