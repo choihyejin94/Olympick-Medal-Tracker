@@ -31,7 +31,7 @@
 <li>메달 집계 표시 리스트 추가</li>
 <li>useState로 국가 데이터 저장</li>
 <li>map메서드 사용하어 데이터 반복 출력</li>
-<li>금메달 수 기준으로 내림차순 정렬</li>
+<li>금->은->동 수 기준으로 내림차순 정렬</li>
 <li>국가명 미입력 시, 경고 메시지 표시</li>
 <br> 
 <br>
@@ -70,6 +70,6 @@
 <li>저작권 정보 표시</li>
 
 ---
-![스크린샷 2024-11-01 오전 11 17 42](https://github.com/user-attachments/assets/730d2fdd-a758-497a-a650-e81226391a04)
+<img width="1228" alt="스크린샷 2024-11-01 오후 2 18 57" src="https://github.com/user-attachments/assets/9902ec25-126a-4489-9ea0-1ff672d79324">
 
 
