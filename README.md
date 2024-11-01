@@ -69,7 +69,7 @@
 <li>저작권 정보 표시</li>
 
 ---
-### [🔍배포용링크]("https://olympick-medal-tracker.vercel.app")
+### [🔍배포용링크](https://olympick-medal-tracker.vercel.app)
 <img width="1228" alt="스크린샷 2024-11-01 오후 2 18 57" src="https://github.com/user-attachments/assets/9902ec25-126a-4489-9ea0-1ff672d79324">
 
 
