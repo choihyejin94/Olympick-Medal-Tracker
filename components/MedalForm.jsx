@@ -8,9 +8,18 @@ const MedalForm = ({ country, setCountry, gold, setGold, silver, setSilver, bron
         { label: '동메달', type: 'number', placeholder: 0, value: bronze, onChange: (event) => setBronze(Number(event.target.value)) },
     ];
 
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        if (country === "") {
+            alert('국가명을 입력해주세요');
+            return;
+        }
+        onSubmit(event); // App.jsx파일 preventSubmit 호출
+    };
+
     return (
         <div>
-            <form className='renderBox' onSubmit={onSubmit}>
+            <form className='renderBox' onSubmit={handleSubmit}>
                 {inputTexts.map((text, index) => (
                     <div className='input-field' key={index}>
                         <label>{text.label}</label>
